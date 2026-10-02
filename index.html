@@ -742,9 +742,9 @@
     </div>
 
     <div class="stat-row">
-      <div class="stat-block b-coral"><div class="k">Expenses</div><div class="v num" id="stat-expenses">₪0.00</div></div>
-      <div class="stat-block b-olive stat-block-income"><div class="k">Income</div><div class="v num" id="stat-income">₪0.00</div><div class="estimated-income-note" id="estimated-income-note" style="display:none"></div></div>
-      <div class="stat-block b-navy"><div class="k">Difference</div><div class="v num" id="stat-diff">₪0.00</div></div>
+      <div class="stat-block b-coral"><div class="k">Expenses</div><div class="v num" id="stat-expenses">$0.00</div></div>
+      <div class="stat-block b-olive stat-block-income"><div class="k">Income</div><div class="v num" id="stat-income">$0.00</div><div class="estimated-income-note" id="estimated-income-note" style="display:none"></div></div>
+      <div class="stat-block b-navy"><div class="k">Difference</div><div class="v num" id="stat-diff">$0.00</div></div>
     </div>
 
     <div class="card glass">
@@ -805,12 +805,12 @@
       <div class="card glass">
         <div class="tx-head"><h3 style="margin:0">Expenses</h3><span class="chip" id="tx-exp-count" style="background:var(--coral);color:#fff">0 entries</span></div>
         <div class="tx-list" id="tx-expenses"></div>
-        <div class="tx-total"><span>Total</span><span class="num" id="tx-exp-total">₪0.00</span></div>
+        <div class="tx-total"><span>Total</span><span class="num" id="tx-exp-total">$0.00</span></div>
       </div>
       <div class="card glass">
         <div class="tx-head"><h3 style="margin:0">Income</h3><span class="chip" id="tx-inc-count" style="background:var(--olive);color:var(--olive-ink)">0 entries</span></div>
         <div class="tx-list" id="tx-income"></div>
-        <div class="tx-total"><span>Total</span><span class="num" id="tx-inc-total">₪0.00</span></div>
+        <div class="tx-total"><span>Total</span><span class="num" id="tx-inc-total">$0.00</span></div>
       </div>
     </div>
   </section>
@@ -907,9 +907,9 @@
 
       <div id="detail-body" style="display:none">
         <div class="stat-row">
-          <div class="stat-block b-coral"><div class="k">Expenses</div><div class="v num" id="detail-stat-exp">₪0.00</div></div>
-          <div class="stat-block b-olive"><div class="k">Income</div><div class="v num" id="detail-stat-inc">₪0.00</div></div>
-          <div class="stat-block b-navy"><div class="k">Difference</div><div class="v num" id="detail-stat-diff">₪0.00</div></div>
+          <div class="stat-block b-coral"><div class="k">Expenses</div><div class="v num" id="detail-stat-exp">$0.00</div></div>
+          <div class="stat-block b-olive"><div class="k">Income</div><div class="v num" id="detail-stat-inc">$0.00</div></div>
+          <div class="stat-block b-navy"><div class="k">Difference</div><div class="v num" id="detail-stat-diff">$0.00</div></div>
         </div>
 
         <div class="two-col">
@@ -932,12 +932,12 @@
           <div class="card glass">
             <div class="tx-head"><h3 style="margin:0">Expenses</h3><span class="chip" id="detail-tx-exp-count" style="background:var(--coral);color:#fff">0 entries</span></div>
             <div class="tx-list" id="detail-tx-expenses"></div>
-            <div class="tx-total"><span>Total</span><span class="num" id="detail-tx-exp-total">₪0.00</span></div>
+            <div class="tx-total"><span>Total</span><span class="num" id="detail-tx-exp-total">$0.00</span></div>
           </div>
           <div class="card glass">
             <div class="tx-head"><h3 style="margin:0">Income</h3><span class="chip" id="detail-tx-inc-count" style="background:var(--olive);color:var(--olive-ink)">0 entries</span></div>
             <div class="tx-list" id="detail-tx-income"></div>
-            <div class="tx-total"><span>Total</span><span class="num" id="detail-tx-inc-total">₪0.00</span></div>
+            <div class="tx-total"><span>Total</span><span class="num" id="detail-tx-inc-total">$0.00</span></div>
           </div>
         </div>
       </div>
@@ -967,8 +967,8 @@
       <h3 style="margin-top:0">Currency</h3>
       <p class="pie-card-sub">Choose which currency amounts are displayed in.</p>
       <div style="display:flex;align-items:center;gap:10px">
-        <button type="button" class="add-btn add-btn-outline" id="currency-toggle-btn" title="Currently showing ₪ — click to switch">₪</button>
-        <span id="currency-toggle-label" style="font-size:13px;color:var(--ink-soft)">Showing amounts in Shekels (₪)</span>
+        <button type="button" class="add-btn add-btn-outline" id="currency-toggle-btn" title="Currently showing $ — click to switch">$</button>
+        <span id="currency-toggle-label" style="font-size:13px;color:var(--ink-soft)">Showing amounts in Dollars ($)</span>
       </div>
     </div>
 
@@ -1061,7 +1061,7 @@
     <label class="modal-field">Category
       <select id="add-item-cat"></select>
     </label>
-    <label class="modal-field">Amount (₪)
+    <label class="modal-field">Amount ($)
       <div class="amt-input-wrap">
         <input type="number" id="add-item-amt" step="0.01" placeholder="0.00" class="amt-input-with-calc">
         <button type="button" class="amt-calc-btn" id="add-item-amt-calc-btn" aria-label="Open calculator">+</button>
@@ -1171,7 +1171,7 @@
     <label class="modal-field">Category
       <select id="edit-item-cat"></select>
     </label>
-    <label class="modal-field">Amount (₪)
+    <label class="modal-field">Amount ($)
       <input type="number" id="edit-item-amt" step="0.01" placeholder="0.00">
     </label>
     <label class="modal-field">Date
@@ -1941,16 +1941,19 @@ async function refreshFromCloud(){
 }
 
 /* ---------------- helpers ---------------- */
-let currentCurrency = 'ILS'; // 'ILS' | 'USD'
+const BASE_CURRENCY = 'USD'; // the currency amounts are typed in and stored in: 'USD' | 'ILS'
+let currentCurrency = BASE_CURRENCY; // currency currently displayed: 'ILS' | 'USD'
 const ILS_PER_USD = 2.96; // approx mid-market USD/ILS rate, Aug 2026
-const convertAmt = n => currentCurrency === 'USD' ? n / ILS_PER_USD : n;
+const curSym = c => c === 'USD' ? '$' : '₪';
+const convertBetween = (n, from, to) => from === to ? n : (from === 'USD' ? n * ILS_PER_USD : n / ILS_PER_USD);
+const convertAmt = n => convertBetween(n, BASE_CURRENCY, currentCurrency);
 const money = n => {
   const c = convertAmt(n);
-  return (c < 0 ? '-' : '') + (currentCurrency === 'USD' ? '$' : '₪') + Math.abs(c).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+  return (c < 0 ? '-' : '') + curSym(currentCurrency) + Math.abs(c).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
 };
 const moneyShort = n => {
   const c = Math.round(convertAmt(n));
-  return (c < 0 ? '-' : '') + (currentCurrency === 'USD' ? '$' : '₪') + Math.abs(c).toLocaleString('en-US');
+  return (c < 0 ? '-' : '') + curSym(currentCurrency) + Math.abs(c).toLocaleString('en-US');
 };
 
 const MONTH_NUM = {January:1,February:2,March:3,April:4,May:5,June:6,July:7,August:8,September:9,October:10,November:11,December:12,
@@ -2164,7 +2167,7 @@ renderBudgetBars();
   function setMode(m){
     mode = m;
     modeToggle.querySelectorAll('.type-btn').forEach(b=>b.classList.toggle('active', b.dataset.mode===m));
-    valueField.firstChild.textContent = m==='percent' ? 'Percent of income (%)' : 'Fixed amount (₪)';
+    valueField.firstChild.textContent = m==='percent' ? 'Percent of income (%)' : 'Fixed amount (' + curSym(BASE_CURRENCY) + ')';
   }
   modeToggle.querySelectorAll('.type-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>setMode(btn.dataset.mode));
@@ -2520,7 +2523,7 @@ function refreshSummaryStats(){
 
 /* Before the 10th of the month, if nothing has been logged as income yet,
    show a soft estimate based on the average of the last 3 archived months
-   so the Summary view isn't just a blank ₪0. */
+   so the Summary view isn't just a blank $0. */
 function updateEstimatedIncomeNote(incTotal){
   const el = document.getElementById('estimated-income-note');
   if(!el) return;
@@ -3037,7 +3040,7 @@ function niceStep(range, targetSteps){
 }
 
 function fmtAxisMoney(n){
-  return (currentCurrency === 'USD' ? '$' : '₪') + Math.round(n).toLocaleString('en-US');
+  return curSym(currentCurrency) + Math.round(n).toLocaleString('en-US');
 }
 
 function renderTrendChart(svgId, pointsId, tooltipId, labels, values, lineColor, trendColor, valueLabel, topCats){
@@ -3607,15 +3610,15 @@ renderThemeGrid();
 function updateCurrencyUI(){
   const btn = document.getElementById('currency-toggle-btn');
   if(!btn) return;
-  btn.classList.toggle('active', currentCurrency === 'USD');
-  btn.textContent = currentCurrency === 'USD' ? '$' : '₪';
-  btn.title = currentCurrency === 'USD' ? 'Currently showing $ — click to switch' : 'Currently showing ₪ — click to switch';
+  btn.classList.toggle('active', currentCurrency !== BASE_CURRENCY);
+  btn.textContent = curSym(currentCurrency);
+  btn.title = `Currently showing ${curSym(currentCurrency)} — click to switch`;
   const label = document.getElementById('currency-toggle-label');
   if(label) label.textContent = currentCurrency === 'USD' ? 'Showing amounts in Dollars ($)' : 'Showing amounts in Shekels (₪)';
 }
 
 document.getElementById('currency-toggle-btn').addEventListener('click', ()=>{
-  currentCurrency = currentCurrency === 'ILS' ? 'USD' : 'ILS';
+  currentCurrency = currentCurrency === 'USD' ? 'ILS' : 'USD';
   updateCurrencyUI();
   renderEverything();
 });
@@ -3818,6 +3821,16 @@ async function buildExportWorkbook(){
   const b64 = EXPORT_TEMPLATE_B64;
   const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
   const zip = await JSZip.loadAsync(bin);
+  // The bundled template was built with a shekel number format. Swap it for the
+  // app's base currency so Excel shows the right symbol on every amount cell.
+  if(BASE_CURRENCY === 'USD'){
+    for(const name of Object.keys(zip.files)){
+      if(name === 'xl/styles.xml' || /^xl\/charts\/chart\d+\.xml$/.test(name)){
+        const xml = await zip.file(name).async('string');
+        zip.file(name, xml.split('[$ ₪]').join('[$$-409]'));
+      }
+    }
+  }
 
   let sheet1 = await zip.file('xl/worksheets/sheet1.xml').async('string'); // Summary
   let sheet2 = await zip.file('xl/worksheets/sheet2.xml').async('string'); // Transactions
@@ -4025,8 +4038,8 @@ document.getElementById('export-excel-btn').addEventListener('click', async ()=>
   }
 
   function buildReportHtml(data, cur){
-    const sym = cur === 'USD' ? '$' : '₪';
-    const conv = n => cur === 'USD' ? n / ILS_PER_USD : n;
+    const sym = curSym(cur);
+    const conv = n => convertBetween(n, BASE_CURRENCY, cur);
     const fmt = n => { const c = conv(n); return (c<0?'-':'') + sym + Math.abs(c).toLocaleString('en-US',{minimumFractionDigits:2, maximumFractionDigits:2}); };
     const fmt0 = n => { const c = Math.round(conv(n)); return (c<0?'-':'') + sym + Math.abs(c).toLocaleString('en-US'); };
 
@@ -4071,9 +4084,11 @@ document.getElementById('export-excel-btn').addEventListener('click', async ()=>
       return `<div class="brow"><b>${esc(b.name)}</b>${txt}</div><div class="track"${i<bud.length-1?' style="margin-bottom:16px"':''}><div style="width:${Math.min(100,raw).toFixed(1)}%;height:100%;background:${over?'#B85D3B':resolveColor(budColors[b.name].dot)}"></div></div>`;
     }).join('');
 
-    const footer = cur === 'USD'
-      ? `Converted from shekels at ₪${ILS_PER_USD} = $1. Original totals: ${esc('₪'+Math.round(incTotal).toLocaleString('en-US'))} income, ${esc('₪'+Math.round(expTotal).toLocaleString('en-US'))} spent.`
-      : 'All amounts in Israeli shekels (₪).';
+    const baseSym = curSym(BASE_CURRENCY);
+    const baseName = BASE_CURRENCY === 'USD' ? 'US dollars' : 'Israeli shekels';
+    const footer = cur !== BASE_CURRENCY
+      ? `Converted from ${baseName} at ₪${ILS_PER_USD} = $1. Original totals: ${esc(baseSym+Math.round(incTotal).toLocaleString('en-US'))} income, ${esc(baseSym+Math.round(expTotal).toLocaleString('en-US'))} spent.`
+      : `All amounts in ${baseName} (${baseSym}).`;
 
     // ---- transactions pages (page 2 onward) ----
     const dateKey = d => { const m = String(d||'').match(/^(\d{2})\/(\d{2})\/(\d{2})$/); return m ? m[3]+m[2]+m[1] : '999999'; };
