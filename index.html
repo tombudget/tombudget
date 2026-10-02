@@ -2912,6 +2912,12 @@ years.forEach((y,i)=>{
 
 function renderYear(y){
   const rows = yearly[y];
+  if(!rows || !rows.length){
+    // Brand-new account with no archived months yet - nothing to chart.
+    const c = document.getElementById('year-chart'); if(c) c.innerHTML = '';
+    const t = document.getElementById('year-table'); if(t) t.innerHTML = '';
+    return;
+  }
   const max = Math.max(...rows.flatMap(r=>[r[1],r[2]]));
   const chart = document.getElementById('year-chart');
   chart.innerHTML = rows.map(r=>{
@@ -4683,6 +4689,5 @@ boot().catch(showCloudError);
   </div>
 </nav>
 
-  
 </body>
 </html>
